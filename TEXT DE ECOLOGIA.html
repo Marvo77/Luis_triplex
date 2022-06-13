@@ -1,10 +1,10 @@
 ﻿<html>
 <head>
-<title> ECOLOGÍA Y MEDIO AMBIENTE </TITLE>
-</HEAD>
+<title> ECOLOGÍA Y MEDIO AMBIENTE </title>
+</head>
 <center>
 <BODY>
-<body bgcolor="#0095FF">
+<body bgcolor="#06C9F9">
   <style type="text/css">
 .matrix { font-family:Lucida Console, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
 </style>
@@ -169,65 +169,150 @@ function zoomer(ycol) {
 
 <BODY style="font-family:arial">
 </p>
-<div id="matrix"> <title>Efecto de onda en texto</title>
-</head>
-
-<body onload="doWave(0)" style="font-family: Verdana"> 
-<p align="center">
-<script language="JavaScript">
-
-//put your text here
-var theText = "QUE ES EL MEDIO AMBIENTE";
-
-function nextSize(i,incMethod,textLength)
-{
-if (incMethod == 1) return (72*Math.abs( Math.sin(i/(textLength/3.14))) );
-if (incMethod == 2) return (255*Math.abs( Math.cos(i/(textLength/3.14))));
-}
-
-function sizeCycle(text,method,dis)
-{
-	output = "";
-	for (i = 0; i < text.length; i++)
-	{
-		size = parseInt(nextSize(i +dis,method,text.length));
-		output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
-	}
-	theDiv.innerHTML = output;
-}
-
-function doWave(n) 
-{   
-	sizeCycle(theText,1,n);
-	if (n > theText.length) {n=0}
-	setTimeout("doWave(" + (n+1) + ")", 50);
-}
-</script>
-</b></p>
-<div ID="theDiv" align="center">
-
-</div>
-
-
+<div id="matrix">    Ecologia    </div>
 </body>
 
- </marquee>
+La ecología es la especialidad científica centrada en el estudio y análisis del vínculo que surge entre los seres vivos y el entorno que los rodea,
+entendido como la combinación de los factores abióticos (entre los cuales se puede mencionar al clima y a la geología) y los factores bióticos
+(organismos que comparten el hábitat). La ecología analiza también la distribución y la cantidad de organismos vivos como resultado de la citada relación.<br>
 
-</html></div>
-</body>
+<IMG SRC="foto01.webp"WIDTH="30%"><BR>
 
-El medio ambiente natural ​ o entorno natural es el conjunto de componentes físicos, químicos y biológicos externos con los que interactúan los seres vivos.<br>
-El medioambiente es el espacio en el que se desarrolla la vida de los distintos organismos favoreciendo su interacción. En él se encuentran tanto seres vivos como elementos sin vida y otros creados por la mano del hombre.
+ <hr align="center" width="100%" size="8" noshade>
+   <BODY style="font-family: Verdana">
+  <FONT SIZE="5.5" FACE="Verdana"><SPAN ID="s"  STYLE=" position:absolute; color:white">EL MEDIO AMBIENTE Y CALIDAD DE VIDA</SPAN>
+    <SPAN ID="s2" STYLE=" position:absolute; color:white">EL MEDIO AMBIENTE Y CALIDAD DE VIDA</SPAN>
+    <SPAN ID="s3" STYLE=" position:absolute; color:white">EL MEDIO AMBIENTE Y CALIDAD DE VIDA</SPAN>
+    <SPAN ID="ds" STYLE=" position:relative; "></SPAN>
+    </FONT>
+    <FONT COLOR="#0000FF" SIZE=5" FACE="Verdana">EL MEDIO AMBIENTE Y CALIDAD DE VIDA</FONT><br>
+  <SCRIPT LANGUAGE="JavaScript">
+  y=0
+  x=2
+  z=1
+  function l(){
+  y+=1
+  x+=1
+  z+=1
+  document.all.s.style.color="green";
+  document.all.s.style.margin=y;
+  document.all.s3.style.color="yellow";
+  document.all.s3.style.margin=z;
+  document.all.s2.style.color="red";
+  document.all.s2.style.margin=x;
+  if (y>3){
+  y=0}
+  if (z>3){
+  z=0}
+  if (x>3){
+  x=0}
+  setTimeout("l(),1")
+  }
+  l()
+  </SCRIPT>
+  </p>
+  </body><br>
+El medio ambiente y calidad de vida, algunos personas definen el medio ambiente como el entorno que afecta y condiciona las circunstancias de vida de la sociedad.
+El conjunto de valores naturales, sociales y culturales que existen en un lugar y en un momento determinado en las comunidades.Gracias a ello, estos aspectos en
+conjunto pueden influir grandemente en la vida de las personas y en generaciones venideras. Es decir, no se trata sólo del espacio donde se desarrolla la vida sino
+que también abarca seres vivos.
+Claramente el medio ambiente es un factor determinado para que podamos gozar de una mejor calidad de vida adecuada. Elementos como el agua, el suelo, el aire,
+objetos, así como los elementos intangibles como la cultura influirán en nosotros.
+Es importante destacar la importancia de los estudios ecológicos, que son multidisciplinarios, por lo que posibilitan ampliar los conocimientos en esta área de las
+ciencias, así como, diseñar estrategias y mecanismo enfocados en la preservación y conservación del medio ambiente.<br>
 
- 
-
-  </center>
-
-<marquee behavior="alternate">
-  <img src="https://www.bbva.com/wp-content/uploads/2019/06/A-0406-DiaMedioAmbiente-BBVA.jpg"WIDTH="35%">
-   </marquee>
+<IMG SRC="foto02.jpg"WIDTH=30%"><BR>
+<hr align="center" width="100%" size="7" noshade>
+<body>
+  <script language="JavaScript1.2">
+  message="El Estudio De Los Ecosistemas"
+  ns6switch=1
+  var ns6=document.getElementById&&!document.all
+  mes=new Array();
+  mes[0]=-1;
+  mes[1]=-4;
+  mes[2]=-7;mes[3]=-10;
+  mes[4]=-7;
+  mes[5]=-4;
+  mes[6]=-1;
+  num=0;
+  num2=0;
+  txt="";
+  function jump0(){
+  if (ns6&&!ns6switch){
+  jump.innerHTML=message
+  return
+  }
+  if(message.length > 6){
+  for(i=0; i != message.length;i++){
+  txt=txt+"<span style='position:relative;' id='n"+i+"'>"+message.charAt(i)+"</span>"};
+  jump.innerHTML=txt;
+  txt="";
+  jump1a()
+  }
+  else{
+  alert("Your message is to short")
+  }
+  }
+  function jump1a(){
+  nfinal=(document.getElementById)? document.getElementById("n0") : document.all.n0
+  nfinal.style.left=-num2;
+  if(num2 != 9){
+  num2=num2+3;
+  setTimeout("jump1a()",50)
+  }
+  else{
+  jump1b()
+  }
+  }
+  function jump1b(){
+  nfinal.style.left=-num2;
+  if(num2 != 0){num2=num2-3;
+  setTimeout("jump1b()",50)
+  }
+  else{
+  jump2()
+  }
+  }
+  function jump2(){
+  txt="";
+  for(i=0;i != message.length;i++){
+  if(i+num > -1 && i+num < 7){
+  txt=txt+"<span style='position:relative;top:"+mes[i+num]+"'>"+message.charAt(i)+"</span>"
+  }
+  else{txt=txt+"<span>"+message.charAt(i)+"</span>"}
+  }
+  jump.innerHTML=txt;
+  txt="";
+  if(num != (-message.length)){
+  num--;
+  setTimeout("jump2()",50)}
+  else{num=0;
+  setTimeout("jump0()",50)}}
+  </script>
+  </head>
+  <body>
   
-
-<P><B>
-
+  <h2><div id="jumpx" style="color:green"></div></h2>
+  <script>
+  if (document.all||document.getElementById){
+  jump=(document.getElementById)? document.getElementById("jumpx") : document.all.jumpx
+  jump0()
+  }
+  else
+  document.write(message)
+  </script>
   
+  </body>
+</center>
+Para estudiar los ecosistemas la ecología establece diferentes niveles de organización, los cuales son: ser (toda cosa que existe, viva o inerte), individuo
+(cualquier ser vivo sea cual sea su especie), especie (grupo de individuos que comparten genoma, con características fenotípicas), población
+(individuos de una especie que comparten hábitat), comunidad(conjunto de poblaciones que comparten hábitat), ecosistema
+(combinación e interacción entre factores bióticos y abióticos en la naturaleza), bioma (comunidades de vegetales que comparten un área geográfica) y biósfera
+(conjunto de ecosistemas que forman parte del planeta. Es una unidad ecológica que hace referencia a toda la parte habitada del planeta).<center>
+<IMG SRC="foto03.jpg"WIDTH=30%"><BR>
+<BR>
+<h4><b><A HREF= "https://www.bing.com/videos/search?q=videos+de+ecologia&&view=detail&mid=75A110C88B27C45D520175A110C88B27C45D5201&&FORM=VRDGAR">¿Qué son los BIOTOPOS?</A></b></h4>
+<h4><b><A HREF= "ECO TIP.HTML">Ecologia</A></b></h4>
+<h4><b><A HREF= "MED TIP.HTML">Medio Ambiente</A></b></h4>
+</html>
